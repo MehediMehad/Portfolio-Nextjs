@@ -28,7 +28,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased dark`}
       >
-        <div className="relative overflow-clip" id="home">
+        <div className="">
           <Navbar />
           {children}
         </div>

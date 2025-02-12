@@ -1,7 +1,11 @@
+import HeroSection from "@/components/Home/HeroSection";
+
 const HomePage = () => {
   return (
-    <div>
-      <h1>1111111111111111111</h1>
+    <div className="relative h-screen overflow-clip">
+      <div className="relative w-full h-full">
+        <HeroSection />
+      </div>
     </div>
   );
 };
