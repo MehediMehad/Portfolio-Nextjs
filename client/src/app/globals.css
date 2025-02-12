@@ -3,19 +3,119 @@
 @tailwind utilities;
 
 :root {
+  --bgNav: linear-gradient(
+    to right bottom,
+    #ff8a00,
+    #ffa000,
+    #ffb700,
+    #ffce00,
+    #ffe500
+  );
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #333333;
+  --primary: #522ffe;
+  --card: #ffffff;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.dark {
+  --background: #030304;
+  --foreground: #ffffff;
+  --primary: #522ffe;
+  --card: #1d1d1d;
+  --bgNav: linear-gradient(
+    to right bottom,
+    #510a5c,
+    #530a5c,
+    #540a5b,
+    #560a5b,
+    #570a5a,
+    #590a5b,
+    #5c095d,
+    #5e095e,
+    #620862,
+    #660666,
+    #6b056b,
+    #6f036f
+  );
+}
+/* nav {
+  background-image: linear-gradient(
+    to right bottom,
+    #510a5c,
+    #530a5c,
+    #540a5b,
+    #560a5b,
+    #570a5a,
+    #590a5b,
+    #5c095d,
+    #5e095e,
+    #620862,
+    #660666,
+    #6b056b,
+    #6f036f
+  );
+  border-radius: 0px;
+  border: 2px solid transparent;
+  text-shadow: 1px 1px 1px #00000040;
+  box-shadow: 8px 8px 20px 0px #45090059;
+} */
+
+.button {
+  background: linear-gradient(140.14deg, #ec540e 15.05%, #d6361f 114.99%)
+      padding-box,
+    linear-gradient(142.51deg, #ff9465 8.65%, #af1905 88.82%) border-box;
+  /* background-image: linear-gradient(
+    to right bottom,
+    #510a5c,
+    #530a5c,
+    #540a5b,
+    #560a5b,
+    #570a5a,
+    #590a5b,
+    #5c095d,
+    #5e095e,
+    #620862,
+    #660666,
+    #6b056b,
+    #6f036f
+  ); */
+  border-radius: 7px;
+  border: 2px solid transparent;
+
+  text-shadow: 1px 1px 1px #00000040;
+  box-shadow: 8px 8px 20px 0px #45090059;
+
+  padding: 10px 20px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: all 0.3s;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.button:hover {
+  box-shadow: none;
+  opacity: 80%;
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer components {
+  .card-shadow {
+    @apply shadow-[0_3px_10px_rgb(0,0,0,0.02)];
+  }
+}
+
+/* Small Device (max-width: 640px) */
+@media (max-width: 640px) {
+  .button {
+    width: 100%; /* Full width for small devices */
+    font-size: 16px;
+    padding: 10px;
+  }
 }
