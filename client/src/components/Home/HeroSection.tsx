@@ -13,6 +13,7 @@ const HeroSection = () => {
       className="relative bg-cover bg-center py-20 max-h-[80%]"
       style={{ backgroundImage: `url(${darkModeImg.src})` }}
     >
+      {/* bg-gradient-to-b from-[#121126] to-[#1b0b37] */}
       <div className="absolute inset-0 bg-black opacity-30"></div>
       <div className="max-w-[1480px] mx-auto px-4 lg:px-10  h-full flex items-center">
         <div className="flex flex-col md:flex-row justify-between w-full">
