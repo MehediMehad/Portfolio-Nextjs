@@ -1,5 +1,6 @@
-import Cards from "@/components/Blogs/Cards";
-import Section from "@/components/shared/Section";
+import React from "react";
+import Section from "../shared/Section";
+import Cards from "../Blogs/Cards";
 const blogs = [
   {
     id: 1,
@@ -37,25 +38,19 @@ const blogs = [
       "https://projectsly.com/images/blog/best-project-design.png?v=1686553999071005322",
     tags: ["#nodejs", "#performance", "#backend"],
   },
-  {
-    id: 5,
-    title: "Node.js Performance Optimization Tips",
-    description:
-      "Learn how to optimize Node.js applications for better performance and scalability.",
-    image:
-      "https://projectsly.com/images/blog/best-project-design.png?v=1686553999071005322",
-    tags: ["#nodejs", "#performance", "#backend"],
-  },
 ];
-const BlogsPage = () => {
+const FeaturedBlogs = () => {
   return (
     <Section
-      title="Projects."
+      title="Latest Blogs."
       description="Read my latest blog posts on web development, React, Node.js, and other exciting technologies."
+      buttonText="All Blogs"
+      buttonHref="/blogs"
+      bgClassName="bg-gradient-to-b from-[#160f2d] to-[#1b0b37]"
     >
       <Cards blogs={blogs} />
     </Section>
   );
 };
 
-export default BlogsPage;
+export default FeaturedBlogs;
