@@ -60,7 +60,7 @@
   box-shadow: 8px 8px 20px 0px #45090059;
 } */
 
-.button {
+.button2 {
   background: linear-gradient(140.14deg, #ec540e 15.05%, #d6361f 114.99%)
       padding-box,
     linear-gradient(142.51deg, #ff9465 8.65%, #af1905 88.82%) border-box;
@@ -94,9 +94,52 @@
   font-weight: 500;
 }
 
-.button:hover {
+.button2:hover {
   box-shadow: none;
   opacity: 80%;
+}
+
+.button {
+  border-radius: 0.25rem;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 400;
+  padding-left: 25px;
+  padding-right: 25px;
+  color: #fff;
+  /* -webkit-clip-path: polygon(
+    0 0,
+    0 0,
+    100% 0,
+    100% 0,
+    100% calc(100% - 15px),
+    calc(100% - 15px) 100%,
+    15px 100%,
+    0 100%
+  );
+  clip-path: polygon(
+    0 0,
+    0 0,
+    100% 0,
+    100% 0,
+    100% calc(100% - 15px),
+    calc(100% - 15px) 100%,
+    15px 100%,
+    0 100%
+  ); */
+  height: 40px;
+  font-size: 0.7rem;
+  line-height: 14px;
+  letter-spacing: 1.2px;
+  /* transition: 0.2s 0.1s; */
+  background-image: linear-gradient(90deg, #3a1c61, #7b1198);
+  border: 1px solid;
+  overflow: hidden;
+}
+
+.button:hover {
+  cursor: pointer;
+  /* transition: all 0.3s ease-in; */
 }
 
 body {
